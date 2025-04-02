@@ -15,7 +15,7 @@ export default function page({ params }) {
   const getTopic = async () => {
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:3000/api/topics/${id}`);
+      const res = await fetch(`/api/topics/${id}`);
       const data = await res.json();
       setTopic(data);
       setLoading(false);
